@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="play" type="button" onclick="playGame()"> Chơi </button>
+<script>
+    function playGame() {
+        let go=true;
+        while (go){
+            let start=parseInt(prompt("Nhập số bắt đầu: "));
+            let end=parseInt(prompt("Nhập số cuối cùng: "));
+            let number = parseInt(prompt("Nhập số dự đoán: "));
+            let x=Math.round(Math.random() * (end-start+1))+start;
+            if (x==number) {
+                alert("Chúc mừng");
+                document.getElementById("play").innerText = "play again";
+                go=false;
+            } else if (number>x) {
+                alert("Lớn hơn");
+            } else {
+                alert("Nhỏ hơn");
+            }
+        }
+    }
+</script>
+</body>
+</html>

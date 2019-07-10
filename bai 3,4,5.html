@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+let num1=0;
+let num2=1,
+    next,
+    cnt=0
+    sum=0;
+//bài 3
+/*
+while (cnt<20){
+    next=num1+num2;
+    num1=num2;
+    num2=next;
+    document.write(num1+" ")
+cnt++;
+}*/
+//bài 5
+/*for (let cnt=0;cnt<5;cnt++){
+    next=num1+num2;
+    num1=num2;
+    num2=next;
+    sum+=num1
+}alert(sum);*/
+//bài 4
+while (cnt<20){
+    next=num1+num2;
+    num1=num2;
+    num2=next;
+    cnt++;
+
+if (num1%5==0){
+    document.write(" "+num1)
+    break;
+}}
+
+
+
+
+</script>
+</body>
+</html>
